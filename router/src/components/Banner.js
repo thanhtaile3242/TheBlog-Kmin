@@ -1,6 +1,7 @@
 import style from "../SCSS/Banner.module.scss";
 const Banner = (props) => {
     const whiteTheme = props.whiteTheme;
+    const title = props.title;
     return (
         <>
             <div
@@ -10,7 +11,7 @@ const Banner = (props) => {
                         : `${style.banner_container_black}`
                 }
             >
-                <h1>THE BLOG</h1>
+                <h1>{title}</h1>
             </div>
         </>
     );

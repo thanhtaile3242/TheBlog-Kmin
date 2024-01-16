@@ -1,19 +1,12 @@
-import style from "../SCSS/HomePage.module.scss";
 import { useState } from "react";
+import recent2 from "../assets/recent2.png";
+import ItemPost from "../components/ItemPost.js";
+import style from "../SCSS/NewsletterPage.module.scss";
 import Navigation from "../components/Navigation.js";
 import Footer from "../components/Footer.js";
-import Banner from "../components/Banner.js";
-import ItemPost from "../components/ItemPost.js";
-import Pagination from "../components/Pagination";
-import left1 from "../assets/left1.png";
-import right1 from "../assets/right1.png";
-import right2 from "../assets/right2.png";
-import recent2 from "../assets/recent2.png";
-import all_1 from "../assets/all_1.png";
-
 const ListRecentBlog = [
     {
-        image: left1,
+        image: recent2,
         author: "Olivia Rhye • 1 Jan 2023",
         title: "UX review presentations",
         previewContent:
@@ -21,7 +14,7 @@ const ListRecentBlog = [
         tags: ["Design", "Presentation"],
     },
     {
-        image: right1,
+        image: recent2,
         author: "Phoenix Baker • 1 Jan 2023 ompelling presentations that wow your coll ompelling presentations that wow your coll",
         title: "Migrating to Linear 101 and nhận được số điểm bằng nhau dựa trên ",
         previewContent:
@@ -29,7 +22,7 @@ const ListRecentBlog = [
         tags: ["Design", "Research", "Research"],
     },
     {
-        image: right2,
+        image: recent2,
         author: "Lana Steiner • 1 Jan 2023",
         title: "Building your API Stack",
         previewContent:
@@ -53,7 +46,7 @@ const ListRecentBlog = [
         tags: ["Design", "Interface"],
     },
 ];
-const HomePage = () => {
+const NewsletterPage = () => {
     const [whiteTheme, setWhiteTheme] = useState(true);
 
     return (
@@ -69,38 +62,30 @@ const HomePage = () => {
                     setWhiteTheme={setWhiteTheme}
                     whiteTheme={whiteTheme}
                 />
-                <Banner whiteTheme={whiteTheme} title={"THE BLOG"} />
-                <section className={style.recent_blog_1_container}>
-                    <h2 className={style.recent_blog_1_title}>
-                        Recent blog posts
-                    </h2>
-                    <div className={style.recent_blog_1_container_left}>
-                        <ItemPost
-                            style={style}
-                            subStyle={style.recent_blog_1_item_left}
-                            objectItem={ListRecentBlog[0]}
-                        />
-                        <div className={style.recent_blog_1_container_right}>
-                            <ItemPost
-                                style={style}
-                                subStyle={style.recent_blog_1_item_right}
-                                objectItem={ListRecentBlog[1]}
-                            />
-
-                            <ItemPost
-                                style={style}
-                                subStyle={style.recent_blog_1_item_right}
-                                objectItem={ListRecentBlog[2]}
-                            />
+                <section className={style.newsletter_container}>
+                    <div className={style.newsletter_item_1}>
+                        <span>Newsletter</span>
+                    </div>
+                    <div className={style.newsletter_item_2}>
+                        <span>Stories and interviews</span>
+                    </div>
+                    <div className={style.newsletter_item_3}>
+                        <span>
+                            Subscribe to learn about new product features, the
+                            latest in technology, solutions, and updates.
+                        </span>
+                    </div>
+                    <div className={style.newsletter_item_4}>
+                        <div className={style.email_input}>
+                            <input type="text" placeholder="Enter your email" />
+                            <span>Subscribe</span>
+                        </div>
+                        <div className={style.policy_content}>
+                            <span>
+                                We care about your data in our privacy policy
+                            </span>
                         </div>
                     </div>
-                </section>
-                <section className={style.recent_blog_2_container}>
-                    <ItemPost
-                        style={style}
-                        subStyle={style.recent_blog_2_item}
-                        objectItem={ListRecentBlog[3]}
-                    />
                 </section>
                 <section className={style.all_blogs_containter}>
                     <h2 className={style.all_blog_title}>All blog posts</h2>
@@ -112,33 +97,15 @@ const HomePage = () => {
                         />
                         <ItemPost
                             style={style}
-                            subStyle={style.all_blog_item}
+                            subStyle={style.all_blog_item_1}
                             objectItem={ListRecentBlog[4]}
                         />
 
                         <ItemPost
                             style={style}
-                            subStyle={style.all_blog_item}
+                            subStyle={style.all_blog_item_1}
                             objectItem={ListRecentBlog[4]}
                         />
-                        <ItemPost
-                            style={style}
-                            subStyle={style.all_blog_item}
-                            objectItem={ListRecentBlog[4]}
-                        />
-                        <ItemPost
-                            style={style}
-                            subStyle={style.all_blog_item}
-                            objectItem={ListRecentBlog[4]}
-                        />
-                        <ItemPost
-                            style={style}
-                            subStyle={style.all_blog_item}
-                            objectItem={ListRecentBlog[4]}
-                        />
-                    </div>
-                    <div className={style.pagination_container}>
-                        <Pagination style={style} />
                     </div>
                 </section>
                 <Footer whiteTheme={whiteTheme} />
@@ -146,5 +113,4 @@ const HomePage = () => {
         </>
     );
 };
-
-export default HomePage;
+export default NewsletterPage;

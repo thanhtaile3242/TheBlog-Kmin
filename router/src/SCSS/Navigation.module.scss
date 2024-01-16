@@ -1,0 +1,391 @@
+@media only screen and (max-width: 590px) {
+    .navi_tablet {
+        display: none;
+    }
+    .navi_PC {
+        display: none;
+    }
+    .navigation_container {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        .navi_name {
+            color: #1a1a1a;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 133.333% */
+        }
+        .naviIcon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+        }
+    }
+    .navigation_container_black {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        .navi_name {
+            color: white;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 133.333% */
+        }
+        .naviIcon {
+            color: white;
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+        }
+    }
+
+    .fullSize_navi {
+        transition: 0.5s ease;
+        position: fixed;
+        inset: 0 0 0 0;
+        transform: translateX(100%);
+        z-index: 2;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 54px;
+        flex-shrink: 0;
+        background: white;
+
+        .navi_name {
+            // color: #fff;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 133.333% */
+        }
+        .navi_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            span {
+                // color: #fff;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 133.333% */
+            }
+        }
+        .icon_container {
+            display: flex;
+            padding: 8px 16px;
+            align-items: flex-start;
+            gap: 16px;
+            border-radius: 29px;
+            background: black;
+            .iconSun {
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                background-color: white;
+                border-radius: 50%;
+            }
+            .iconMoon {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+        .crossX_container {
+            position: absolute;
+            bottom: 0;
+            padding: 20px;
+            img {
+                fill: black;
+                // color: black;
+                cursor: pointer;
+            }
+        }
+    }
+    .fullSize_navi_black {
+        transition: 0.5s ease;
+        position: fixed;
+        inset: 0 0 0 0;
+        transform: translateX(100%);
+        z-index: 2;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 54px;
+        flex-shrink: 0;
+        background: black;
+
+        .navi_name {
+            color: #fff;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 133.333% */
+        }
+        .navi_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            span {
+                color: #fff;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 133.333% */
+            }
+        }
+        .icon_container {
+            display: flex;
+            padding: 8px 16px;
+            align-items: flex-start;
+            gap: 16px;
+            border-radius: 29px;
+            background: white;
+            .iconSun_black {
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                background-color: black;
+                border-radius: 50%;
+            }
+            .iconMoon {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+        .crossX_container {
+            position: absolute;
+            bottom: 0;
+            padding: 20px;
+            img {
+                fill: black;
+                // color: black;
+                cursor: pointer;
+            }
+        }
+    }
+    .full_menu:checked ~ .fullSize_navi {
+        transform: translateX(0);
+    }
+    .full_menu:checked ~ .fullSize_navi_black {
+        transform: translateX(0);
+    }
+}
+@media only screen and (min-width: 590px) and (max-width: 834px) {
+    .navi_mobile {
+        display: none;
+    }
+    .navi_PC {
+        display: none;
+    }
+    .navigation_container {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+        .navi_name {
+            white-space: nowrap;
+            color: #1a1a1a;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 133.333% */
+        }
+        .navi_content {
+            display: flex;
+            gap: 14px;
+            span {
+                padding: 8px;
+                color: #1a1a1a;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .icon_container {
+                display: flex;
+                padding: 8px 16px;
+                gap: 16px;
+                .iconSun {
+                    border-radius: 50%;
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+    //
+    .navigation_container_black {
+        background-color: black;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+        .navi_name {
+            white-space: nowrap;
+            color: white;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 133.333% */
+        }
+        .navi_content {
+            display: flex;
+            gap: 14px;
+            span {
+                padding: 8px;
+                color: white;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 133.333% */
+            }
+            .icon_container {
+                display: flex;
+                padding: 8px 16px;
+                gap: 16px;
+                background-color: white;
+                border-radius: 29px;
+                .iconSun {
+                    background-color: black;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 834px) {
+    .navi_mobile {
+        display: none;
+    }
+    .navi_tablet {
+        display: none;
+    }
+    .main_content {
+        padding: 30px 11.2% 0;
+    }
+    .navigation_container {
+        width: auto;
+        display: flex;
+        padding: 10px 0px;
+        justify-content: space-between;
+        align-items: center;
+        .navi_name {
+            width: 131px;
+            flex-shrink: 0;
+            color: #1a1a1a;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 120% */
+        }
+        .navi_content {
+            display: flex;
+            gap: 14px;
+            span {
+                padding: 8px;
+                color: #1a1a1a;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 120% */
+            }
+            .icon_container {
+                display: flex;
+                padding: 8px 16px;
+                align-items: flex-start;
+                gap: 16px;
+                border-radius: 29px;
+                background: black;
+                .iconMoon {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    // Black theme
+    .navigation_container_black {
+        width: auto;
+        display: flex;
+        padding: 10px 0px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        .navi_name {
+            width: 131px;
+            flex-shrink: 0;
+            color: white;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 120% */
+        }
+        .navi_content {
+            display: flex;
+            gap: 14px;
+            span {
+                padding: 8px;
+                color: white;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 120% */
+            }
+            .icon_container {
+                display: flex;
+                padding: 8px 16px;
+                align-items: flex-start;
+                gap: 16px;
+                border-radius: 29px;
+                background: white;
+                .iconSun_black {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: black;
+                }
+                .iconMoon {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

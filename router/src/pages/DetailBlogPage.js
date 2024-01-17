@@ -1,10 +1,13 @@
 import { useState } from "react";
-import recent2 from "../assets/recent2.png";
-import ItemPost from "../components/ItemPost.js";
-import style from "../SCSS/NewsletterPage.module.scss";
 import Navigation from "../components/Navigation.js";
 import Footer from "../components/Footer.js";
+import ItemPost from "../components/ItemPost.js";
 import Email from "../components/Email.js";
+import recent2 from "../assets/recent2.png";
+import BlogContent from "../components/BlogContent.js";
+import style from "../SCSS/DetailBlogPage.module.scss";
+import imageCover from "../assets/coverDetail.png";
+import imageDetail from "../assets/detail1.png";
 const ListRecentBlog = [
     {
         image: recent2,
@@ -47,9 +50,8 @@ const ListRecentBlog = [
         tags: ["Design", "Interface"],
     },
 ];
-const NewsletterPage = () => {
+const DetailBlogPage = () => {
     const [whiteTheme, setWhiteTheme] = useState(true);
-
     return (
         <>
             <div
@@ -63,26 +65,48 @@ const NewsletterPage = () => {
                     setWhiteTheme={setWhiteTheme}
                     whiteTheme={whiteTheme}
                 />
-                <Email whiteTheme={whiteTheme} />
-                <section className={style.all_blogs_containter}>
-                    <h2 className={style.all_blog_title}>All blog posts</h2>
-                    <div className={style.all_blog_containter}>
-                        <ItemPost
-                            style={style}
-                            subStyle={style.all_blog_item}
-                            objectItem={ListRecentBlog[4]}
+                <section className={style.detail_blog_container}>
+                    <div className={style.recent_blog_container}>
+                        <div className={style.recent_blog_title}>
+                            <h2>Recent blog posts</h2>
+                        </div>
+                        <div className={style.recent_blog_list}>
+                            <ItemPost
+                                style={style}
+                                subStyle={style.recent_blog_item}
+                                objectItem={ListRecentBlog[0]}
+                            />
+                            <ItemPost
+                                style={style}
+                                subStyle={style.recent_blog_item}
+                                objectItem={ListRecentBlog[0]}
+                            />
+                            <ItemPost
+                                style={style}
+                                subStyle={style.recent_blog_item}
+                                objectItem={ListRecentBlog[0]}
+                            />
+                            <ItemPost
+                                style={style}
+                                subStyle={style.recent_blog_item}
+                                objectItem={ListRecentBlog[0]}
+                            />
+                            <ItemPost
+                                style={style}
+                                subStyle={style.recent_blog_item}
+                                objectItem={ListRecentBlog[0]}
+                            />
+                        </div>
+                    </div>
+                    <div className={style.blog_content_container}>
+                        <BlogContent
+                            whiteTheme={whiteTheme}
+                            imageCover={imageCover}
+                            imageDetail={imageDetail}
                         />
-                        <ItemPost
-                            style={style}
-                            subStyle={style.all_blog_item_1}
-                            objectItem={ListRecentBlog[4]}
-                        />
-
-                        <ItemPost
-                            style={style}
-                            subStyle={style.all_blog_item_1}
-                            objectItem={ListRecentBlog[4]}
-                        />
+                        <div className={style.email_container}>
+                            <Email whiteTheme={whiteTheme} />
+                        </div>
                     </div>
                 </section>
                 <Footer whiteTheme={whiteTheme} />
@@ -90,4 +114,5 @@ const NewsletterPage = () => {
         </>
     );
 };
-export default NewsletterPage;
+
+export default DetailBlogPage;

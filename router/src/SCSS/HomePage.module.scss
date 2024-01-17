@@ -1757,6 +1757,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 32px;
+                //
                 .recent_blog_1_item_left {
                     width: 100%;
                     .image_container {
@@ -1839,6 +1840,7 @@
                         }
                     }
                 }
+                //
                 .recent_blog_1_container_right {
                     display: grid;
                     grid-template-rows: 1fr 1fr;
@@ -2183,7 +2185,7 @@
     // Dark mode
     .main_content_black {
         background-color: black;
-        padding: 60px 11.2% 0;
+        padding: 30px 11.2% 0;
         .recent_blog_1_container {
             width: 100%;
             padding: 30px 0;

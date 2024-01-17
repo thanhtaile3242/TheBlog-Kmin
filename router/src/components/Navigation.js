@@ -7,6 +7,7 @@ import crossX from "../assets/crossX.svg";
 import threeLine from "../assets/3lineWhite.svg";
 import crossXblack from "../assets/crossXblack.svg";
 import { useState } from "react";
+import { Route, Routes, Link } from "react-router-dom";
 const Navigation = (props) => {
     const whiteTheme = props.whiteTheme;
 
@@ -43,13 +44,33 @@ const Navigation = (props) => {
                     }
                 >
                     <div>
-                        <span className={style.navi_name}>Thanh Tai</span>
+                        <span className={style.navi_name}>
+                            <Link to="/" className={style.link}>
+                                Thanh Tai
+                            </Link>
+                        </span>
                     </div>
                     <div className={style.navi_content}>
-                        <span>Blogs</span>
-                        <span>Projects</span>
-                        <span>About</span>
-                        <span>Newsletter</span>
+                        <span>
+                            <Link to="/" className={style.link}>
+                                Blogs
+                            </Link>
+                        </span>
+                        <span>
+                            <Link to="/projects" className={style.link}>
+                                Projects
+                            </Link>
+                        </span>
+                        <span>
+                            <Link to="/about" className={style.link}>
+                                About
+                            </Link>
+                        </span>
+                        <span>
+                            <Link to="/newsletter" className={style.link}>
+                                Newsletter
+                            </Link>
+                        </span>
 
                         {whiteTheme ? (
                             <>
@@ -109,12 +130,32 @@ const Navigation = (props) => {
                             : `${style.navigation_container_black}`
                     }
                 >
-                    <span className={style.navi_name}>Thanh Tai</span>
+                    <span className={style.navi_name}>
+                        <Link to="/" className={style.link}>
+                            Thanh Tai
+                        </Link>
+                    </span>
                     <div className={style.navi_content}>
-                        <span>Blogs</span>
-                        <span>Projects</span>
-                        <span>About</span>
-                        <span>Newsletter</span>
+                        <span>
+                            <Link to="/" className={style.link}>
+                                Blogs
+                            </Link>
+                        </span>
+                        <span>
+                            <Link to="/projects" className={style.link}>
+                                Projects
+                            </Link>
+                        </span>
+                        <span>
+                            <Link to="/about" className={style.link}>
+                                About
+                            </Link>
+                        </span>
+                        <span>
+                            <Link to="/newsletter" className={style.link}>
+                                Newsletter
+                            </Link>
+                        </span>
                         <div className={style.icon_container}>
                             <img
                                 src={Sun}
@@ -143,12 +184,32 @@ const Navigation = (props) => {
                             : `${style.navigation_container_black}`
                     }
                 >
-                    <span className={style.navi_name}>Thanh Tai</span>
+                    <span className={style.navi_name}>
+                        <Link to="/" className={style.link}>
+                            Thanh Tai
+                        </Link>
+                    </span>
                     <div className={style.navi_content}>
-                        <span>Blogs</span>
-                        <span>Projects</span>
-                        <span>About</span>
-                        <span>Newsletter</span>
+                        <span>
+                            <Link to="/" className={style.link}>
+                                Blogs
+                            </Link>
+                        </span>
+                        <span>
+                            <Link to="/projects" className={style.link}>
+                                Projects
+                            </Link>
+                        </span>
+                        <span>
+                            <Link to="/about" className={style.link}>
+                                About
+                            </Link>
+                        </span>
+                        <span>
+                            <Link to="/newsletter" className={style.link}>
+                                Newsletter
+                            </Link>
+                        </span>
                         <div className={style.icon_container}>
                             {whiteTheme ? (
                                 <>

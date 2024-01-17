@@ -47,6 +47,10 @@
     }
 
     .fullSize_navi {
+        .link {
+            text-decoration: none;
+            color: black;
+        }
         transition: 0.5s ease;
         position: fixed;
         inset: 0 0 0 0;
@@ -117,6 +121,10 @@
         }
     }
     .fullSize_navi_black {
+        .link {
+            text-decoration: none;
+            color: white;
+        }
         transition: 0.5s ease;
         position: fixed;
         inset: 0 0 0 0;
@@ -200,6 +208,10 @@
         display: none;
     }
     .navigation_container {
+        .link {
+            text-decoration: none;
+            color: black;
+        }
         display: flex;
         padding: 20px;
         align-items: center;
@@ -240,6 +252,10 @@
 
     //
     .navigation_container_black {
+        .link {
+            text-decoration: none;
+            color: white;
+        }
         background-color: black;
         display: flex;
         padding: 20px;
@@ -292,6 +308,10 @@
         padding: 30px 11.2% 0;
     }
     .navigation_container {
+        .link {
+            text-decoration: none;
+            color: black;
+        }
         width: auto;
         display: flex;
         padding: 10px 0px;
@@ -337,6 +357,10 @@
     }
     // Black theme
     .navigation_container_black {
+        .link {
+            text-decoration: none;
+            color: white;
+        }
         width: auto;
         display: flex;
         padding: 10px 0px;

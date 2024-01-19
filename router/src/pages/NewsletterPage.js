@@ -5,6 +5,7 @@ import style from "../SCSS/NewsletterPage.module.scss";
 import Navigation from "../components/Navigation.js";
 import Footer from "../components/Footer.js";
 import Email from "../components/Email.js";
+import { useOutletContext } from "react-router-dom";
 const ListRecentBlog = [
     {
         image: recent2,
@@ -48,8 +49,7 @@ const ListRecentBlog = [
     },
 ];
 const NewsletterPage = () => {
-    const [whiteTheme, setWhiteTheme] = useState(true);
-
+    const [whiteTheme, setWhiteTheme] = useOutletContext();
     return (
         <>
             <div
@@ -59,10 +59,6 @@ const NewsletterPage = () => {
                         : `${style.main_content_black}`
                 }
             >
-                <Navigation
-                    setWhiteTheme={setWhiteTheme}
-                    whiteTheme={whiteTheme}
-                />
                 <Email whiteTheme={whiteTheme} />
                 <section className={style.all_blogs_containter}>
                     <h2 className={style.all_blog_title}>All blog posts</h2>
@@ -85,7 +81,6 @@ const NewsletterPage = () => {
                         />
                     </div>
                 </section>
-                <Footer whiteTheme={whiteTheme} />
             </div>
         </>
     );

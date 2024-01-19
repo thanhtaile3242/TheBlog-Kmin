@@ -188,6 +188,9 @@
 @media only screen and (min-width: 834.002px) {
     .main_content {
         padding: 30px 11.2% 0;
+        h1 {
+            font-size: 13vw;
+        }
         .author_detail {
             display: flex;
             flex-direction: column;
@@ -231,6 +234,10 @@
     .main_content_black {
         background-color: black;
         padding: 30px 11.2% 0;
+        h1 {
+            font-size: 13vw;
+        }
+
         .author_detail {
             display: flex;
             flex-direction: column;

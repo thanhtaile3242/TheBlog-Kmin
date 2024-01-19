@@ -10,6 +10,7 @@ import right2 from "../assets/right2.png";
 import recent2 from "../assets/recent2.png";
 import project1 from "../assets/project1.jpeg";
 import all_1 from "../assets/all_1.png";
+import { useOutletContext } from "react-router-dom";
 const ListRecentBlog = [
     {
         image: project1,
@@ -53,7 +54,7 @@ const ListRecentBlog = [
     },
 ];
 const ProjectPage = () => {
-    const [whiteTheme, setWhiteTheme] = useState(true);
+    const [whiteTheme, setWhiteTheme] = useOutletContext(true);
     return (
         <>
             <div
@@ -63,10 +64,6 @@ const ProjectPage = () => {
                         : `${style.main_content_black}`
                 }
             >
-                <Navigation
-                    setWhiteTheme={setWhiteTheme}
-                    whiteTheme={whiteTheme}
-                />
                 <Banner whiteTheme={whiteTheme} title={"PROJECTS"} />
                 <section className={style.list_projects_container}>
                     <h2 className={style.list_projects_title}>List project</h2>
@@ -108,7 +105,6 @@ const ProjectPage = () => {
                         </div> */}
                     </div>
                 </section>
-                <Footer whiteTheme={whiteTheme} />
             </div>
         </>
     );

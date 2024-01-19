@@ -8,6 +8,7 @@ import BlogContent from "../components/BlogContent.js";
 import style from "../SCSS/DetailBlogPage.module.scss";
 import imageCover from "../assets/coverDetail.png";
 import imageDetail from "../assets/detail1.png";
+import { useOutletContext } from "react-router-dom";
 const ListRecentBlog = [
     {
         image: recent2,
@@ -51,7 +52,7 @@ const ListRecentBlog = [
     },
 ];
 const DetailBlogPage = () => {
-    const [whiteTheme, setWhiteTheme] = useState(true);
+    const [whiteTheme, setWhiteTheme] = useOutletContext();
     return (
         <>
             <div
@@ -61,10 +62,6 @@ const DetailBlogPage = () => {
                         : `${style.main_content_black}`
                 }
             >
-                <Navigation
-                    setWhiteTheme={setWhiteTheme}
-                    whiteTheme={whiteTheme}
-                />
                 <section className={style.detail_blog_container}>
                     <div className={style.recent_blog_container}>
                         <div className={style.recent_blog_title}>
@@ -109,7 +106,6 @@ const DetailBlogPage = () => {
                         </div>
                     </div>
                 </section>
-                <Footer whiteTheme={whiteTheme} />
             </div>
         </>
     );

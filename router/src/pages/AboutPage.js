@@ -4,8 +4,9 @@ import Banner from "../components/Banner.js";
 import Navigation from "../components/Navigation.js";
 import Footer from "../components/Footer.js";
 import author from "../assets/author.png";
+import { useOutletContext } from "react-router-dom";
 const AboutPage = () => {
-    const [whiteTheme, setWhiteTheme] = useState(true);
+    const [whiteTheme, setWhiteTheme] = useOutletContext();
     return (
         <>
             <div
@@ -15,10 +16,6 @@ const AboutPage = () => {
                         : `${style.main_content_black}`
                 }
             >
-                <Navigation
-                    setWhiteTheme={setWhiteTheme}
-                    whiteTheme={whiteTheme}
-                />
                 <Banner whiteTheme={whiteTheme} title={"John Doe"} />
                 <section className={style.author_detail}>
                     <div className={style.picture_container}>
@@ -111,7 +108,6 @@ const AboutPage = () => {
                         </ul>
                     </div>
                 </section>
-                <Footer whiteTheme={whiteTheme} />
             </div>
         </>
     );

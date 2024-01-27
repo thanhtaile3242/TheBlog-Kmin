@@ -11,10 +11,11 @@ import right1 from "../assets/right1.png";
 import right2 from "../assets/right2.png";
 import recent2 from "../assets/recent2.png";
 import all_1 from "../assets/all_1.png";
-
+//
+import recent1 from "../assets/Image.png";
 const ListRecentBlog = [
     {
-        image: left1,
+        image: recent1,
         author: "Olivia Rhye • 1 Jan 2023",
         title: "UX review presentations",
         previewContent:

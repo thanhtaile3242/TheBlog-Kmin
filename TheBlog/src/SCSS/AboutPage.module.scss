@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 590px) {
+    .main_content {
+        h1 {
+            font-size: 15vw;
+        }
+        .author_detail {
+            padding: 0 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-top: 60px;
+            .picture_container {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .author_info {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .span_bold {
+                    /* Display xs/Semibold */
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px; /* 133.333% */
+                }
+                ul {
+                    margin: 0;
+                }
+                .span_normal,
+                li {
+                    color: #667085;
+                    /* Text md/Normal */
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+    // Dark mode
+    .main_content_black {
+        h1 {
+            font-size: 15vw;
+        }
+        background-color: black;
+        .author_detail {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-top: 60px;
+            .picture_container {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .author_info {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .span_bold {
+                    color: white;
+                    /* Display xs/Semibold */
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px; /* 133.333% */
+                }
+                ul {
+                    margin: 0;
+                }
+                .span_normal,
+                li {
+                    color: #c0c5d0;
+                    /* Text md/Normal */
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 590px) and (max-width: 834px) {
+    .main_content {
+        h1 {
+            font-size: 15vw;
+        }
+
+        .author_detail {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-top: 60px;
+            .picture_container {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .author_info {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .span_bold {
+                    /* Display xs/Semibold */
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px; /* 133.333% */
+                }
+                ul {
+                    margin: 0;
+                }
+                .span_normal,
+                li {
+                    color: #667085;
+                    /* Text md/Normal */
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+    // Dark mode
+    .main_content_black {
+        h1 {
+            font-size: 15vw;
+        }
+        background-color: black;
+        .author_detail {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-top: 60px;
+            .picture_container {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .author_info {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .span_bold {
+                    color: white;
+                    /* Display xs/Semibold */
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px; /* 133.333% */
+                }
+                ul {
+                    margin: 0;
+                }
+                .span_normal,
+                li {
+                    color: #c0c5d0;
+                    /* Text md/Normal */
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 834.002px) {
+    .main_content {
+        padding: 30px 11.2% 0;
+        h1 {
+            font-size: 13vw;
+        }
+        .author_detail {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-top: 60px;
+            .picture_container {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .author_info {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .span_bold {
+                    /* Display xs/Semibold */
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px; /* 133.333% */
+                }
+                ul {
+                    margin: 0;
+                }
+                .span_normal,
+                li {
+                    color: #667085;
+                    /* Text md/Normal */
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+    // Dark mode
+    .main_content_black {
+        background-color: black;
+        padding: 30px 11.2% 0;
+        h1 {
+            font-size: 13vw;
+        }
+
+        .author_detail {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            padding-top: 60px;
+            .picture_container {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .author_info {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .span_bold {
+                    color: white;
+                    /* Display xs/Semibold */
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px; /* 133.333% */
+                }
+                ul {
+                    margin: 0;
+                }
+                .span_normal,
+                li {
+                    color: #c0c5d0;
+                    /* Text md/Normal */
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                }
+            }
+        }
+    }
+}
